@@ -9,4 +9,28 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-color: var(--lavender-pink-color);
+  --background-image: url(../images/cover-image-light.png);
+  --decor-color: var(--umber-gray-color);
+  --accent-color: var(--shiny-purple-pink-color);
+  --transparent-decor-color: var(--transparent-umber-gray-color);
+  --text-with-background: var(--umber-gray-color);
+  --title-color: var(--cotton-candy-color);
+  --card-color: var(--umber-gray-color);
+  --record-decor: var(--record-false);
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --background-color: var(--lavender-pink-color);
+    --background-image: url(../images/cover-image-light.png);
+    --decor-color: var(--umber-gray-color);
+    --accent-color: var(--shiny-purple-pink-color);
+    --transparent-decor-color: var(--transparent-umber-gray-color);
+    --text-with-background: var(--umber-gray-color);
+    --title-color: var(--cotton-candy-color);
+    --card-color: var(--umber-gray-color);
+    --record-decor: var(--record-false);
+  }
 }
