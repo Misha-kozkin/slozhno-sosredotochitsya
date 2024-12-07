@@ -8,7 +8,8 @@
   --font-family: 'IBM Plex mono';
   --font-size: 18px;
   --accent-indent-small: clamp(10px, 0.02rem + 2.5vw, 20px);
-  --accent-indent-medium: clamp(46px, 0.8rem + 8.9vw, 82px);
+  --accent-indent-medium: clamp(40px, 1.3rem + 5vw, 60px);
+  --main-gap: clamp(50px, 1.3rem + 7.6vw, 80px);
   --record-true: block;
   --record-false: none;
   --deep-pink-color: #ff0070;

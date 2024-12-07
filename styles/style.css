@@ -14,7 +14,8 @@
 }
 
 .header {
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   display: grid;
   padding: var(--accent-indent-small) var(--accent-indent-small) 0
     var(--accent-indent-small);
@@ -45,7 +46,7 @@
   left: 0;
   inline-size: 25px;
   block-size: 25px;
-  margin: var(--accent-indent-small) var(--accent-indent-small) 0
+  margin: var(--accent-indent-small) var(--accent-indent-small) 14px
     var(--accent-indent-small);
   border-bottom: 1px solid var(--decor-color);
   border-left: 1px solid var(--decor-color);
@@ -81,7 +82,7 @@
   height: 9px;
   border-radius: 50%;
   background-color: var(--decor-color);
-  box-shadow: 0 0 0 4px var(--transparent-decor-color);
+  box-shadow: 0 0 2px 4px var(--transparent-decor-color);
   margin: 8px 10px 0 0;
 }
 
@@ -112,6 +113,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -146,12 +148,13 @@
   color: var(--text-with-background);
   font-weight: bold;
   line-height: 23.4px;
+  font-size: var(--font-size);
 }
 
 .main {
   display: grid;
   padding: var(--accent-indent-medium) var(--accent-indent-small);
-  gap: var(--accent-indent-medium);
+  gap: var(--main-gap);
 }
 
 .section {
@@ -179,6 +182,7 @@
 }
 
 .card__linc {
+  text-shadow: 1px 1px 0 var(--accent-color);
   text-decoration: none;
   outline: 0;
   transition: 0.3s;
@@ -198,9 +202,6 @@
   font-weight: normal;
 }
 
-.galeri {
-}
-
 .galeri__list {
   display: grid;
   gap: var(--accent-indent-small);
@@ -218,7 +219,7 @@
   display: grid;
   justify-content: center;
   height: 100vh;
-  margin: 0 0 var(--accent-indent-small) 0;
+  min-height: 668px;
 }
 
 .footer__title {
@@ -233,10 +234,20 @@
 
   .header {
     padding-left: 0;
+    min-height: 1005px;
   }
 
-  .section__two-column-content {
+  .decorated-zone::after {
+    margin: var(--accent-indent-small);
+  }
+
+  .section__content {
     grid-template-columns: min-content 1fr;
+  }
+
+  .section__content-item {
+    display: grid;
+    gap: 20px;
   }
 
   .title {
@@ -279,9 +290,13 @@
 
 @media (width >= 1024px) {
 
+  .header {
+    min-height: 768px;
+  }
+
   .header__title {
     font-size: clamp(7.5rem, 0.563rem + 14.453vw, 9.813rem);
-    margin-top: 160px;
+    margin-top: 149px;
   }
 
   .header__theme-menu {
@@ -291,6 +306,10 @@
   .header__theme-menu-list {
     flex-direction: row;
     margin: 0 0 0 20px;
+  }
+
+  .main {
+    gap: 80px;
   }
 
   .card__list-column-content {
