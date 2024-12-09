@@ -95,7 +95,7 @@
   display: flex;
   flex-direction: column;
   gap: 9px;
-  margin-top: clamp(61px, -3.2rem + 30vw, 172px);
+  margin-top: clamp(61px, -3.2rem + 30vw, 170px);
 }
 
 .header__theme-menu-button {
@@ -130,7 +130,7 @@
   font-weight: 700;
   line-height: 82.5%;
   align-self: start;
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 .shadow-decor {
@@ -141,8 +141,8 @@
   justify-self: end;
   inline-size: min(100%, clamp(364px, -1.2rem + 50vw, 492px));
   font-size: var(--font-size);
-  block-size: 118px;
-  margin-bottom: 8px;
+  block-size: min-content;
+  margin-bottom: 34px;
 }
 
 .title-decor {
@@ -249,11 +249,11 @@
   }
 
   .header__title {
-    margin-top: 12px;
+    margin-top: 11px;
   }
 
   .header__subtitle {
-    margin-bottom: 20px;
+    margin-bottom: 45px;
   }
 
   .decorated-zone::after {
@@ -314,7 +314,7 @@
   }
 
   .header__subtitle {
-    block-size: min-content;
+    margin-bottom: 20px;
   }
 
   .header__theme-menu {
