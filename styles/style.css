@@ -142,7 +142,7 @@
   inline-size: min(100%, clamp(364px, -1.2rem + 50vw, 492px));
   font-size: var(--font-size);
   block-size: min-content;
-  margin-bottom: 34px;
+  margin-bottom: 10px;
 }
 
 .title-decor {
@@ -253,7 +253,7 @@
   }
 
   .header__subtitle {
-    margin-bottom: 45px;
+    margin-bottom: 22px;
   }
 
   .decorated-zone::after {
